@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>実践的トラベル英会話セミナー</title>
+    <style>
+      #hero-text {
+        text-shadow: 2px 0 #FFE5A5, -2px 0 #FFE5A5, 0 2px #FFE5A5, 0 -2px #FFE5A5, 1px 1px #FFE5A5, -1px -1px #FFE5A5, 1px -1px #FFE5A5, -1px 1px #FFE5A5;
+      }
+      .tag-rotate {
+        transform: rotate(-15deg);
+      }
+      .tag-hover:hover {
+        transform: rotate(-15deg) scale(1.05);
+      }
+    </style>
+</head>
+<body class="bg-[#FFF9F0]"> <!-- より暖かい背景色に変更 -->
+    <div class="relative">
+      <!-- Particle デザインを増強 -->
+      <svg class="absolute top-1/2 left-1/2 -translate-x-45 -translate-y-95 w-4 h-4 animate-float" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" fill="none">
+        <circle cx="8.5" cy="9.08463" r="8" fill="#64ADD9" opacity="0.8"/>
+      </svg>
+      <svg class="absolute top-1/2 left-1/2 translate-x-25 -translate-y-140 w-3 h-3 animate-float delay-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" fill="none">
+        <circle cx="8.5" cy="9.08463" r="8" fill="#FEC630" opacity="0.8"/>
+      </svg>
+      <svg class="absolute top-1/2 left-1/2 translate-x-35 -translate-y-80 w-5 h-5 animate-float delay-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" fill="none">
+        <circle cx="8.5" cy="9.08463" r="8" fill="#FF74A7" opacity="0.7"/>
+      </svg>
+      <svg class="absolute top-1/4 left-1/4 w-2 h-2 animate-float delay-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" fill="none">
+        <circle cx="8.5" cy="9.08463" r="8" fill="#64ADD9" opacity="0.6"/>
+      </svg>
+
+      <!-- ヘッダー -->
+      <div class="w-full bg-gradient-to-r from-[#004B83] to-[#004B83] py-5 shadow-md"> <!-- グラデーション追加 -->
+        <div class="flex justify-center">
+          <img src="/images/logo.svg" alt="DeSiM icon" class="h-10"> <!-- ロゴサイズ固定 -->
+        </div>
+      </div>
+
+      <!-- メインコンテンツ -->
+      <section class="container mx-auto px-4 max-w-3xl"> <!-- コンテンツ幅を制限 -->
+
+        <!-- タグセクション -->
+        <div class="flex justify-center mt-12 mb-8 space-x-3"> <!-- スペース調整 -->
+          <!-- つながるタグ -->
+          <div class="relative tag-rotate tag-hover transition-transform duration-300 bg-gradient-to-b from-amber-300 to-amber-400 rounded-lg px-2 py-2 shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="28" viewBox="0 0 34 28" fill="none" class="absolute rotate-15 top-10 -left-4">
+              <path d="M7.83333 10.7805L3.94267 7.73845C3.23516 7.18526 3.55894 6.05221 4.45192 5.95638L29.6984 3.24701C30.5698 3.15349 31.1314 4.14655 30.6022 4.84515L28.3415 7.82927M28.3415 7.82927L16.104 23.9828C15.712 24.5002 14.9386 24.5128 14.5299 24.0085L11.0525 19.7168C10.6717 19.2468 10.792 18.5491 11.3081 18.2338L28.3415 7.82927Z"
+                    stroke="#FFD64B" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <span class="text-black text-2xl font-semibold font-['Poppins']">つながる</span>
+          </div>
+
+          <!-- 学べるタグ -->
+          <div class="relative tag-rotate tag-hover transition-transform duration-300 bg-gradient-to-b from-cyan-200 to-cyan-300 rounded-lg px-2 py-2 shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="35" viewBox="0 0 33 35" fill="none" class="absolute -top-8 left-20 rotate-15">
+              <path d="M23.3238 14.0361L28.8538 15.397C29.7161 15.6092 29.8946 16.7565 29.1374 17.2206L5.37919 31.7827C4.63718 32.2375 3.7086 31.593 3.87508 30.7388L4.71742 26.4166M4.71742 26.4166L9.00664 4.40806C9.13347 3.75727 9.84698 3.40785 10.4389 3.70667L16.0786 6.55401C16.6069 6.82072 16.7893 7.48536 16.4711 7.98435L4.71742 26.4166Z"
+                    stroke="#64ADD9" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <span class="text-black text-2xl font-semibold font-['Poppins']">学べる</span>
+          </div>
+
+          <!-- 安心できるタグ -->
+          <div class="tag-rotate tag-hover transition-transform duration-300 bg-gradient-to-b from-pink-400 to-pink-500 rounded-lg px-2 py-2 shadow-md">
+            <span class="text-black text-2xl font-semibold font-['Poppins']">安心できる</span>
+          </div>
+        </div>
+
+        <!-- ヒーローテキスト -->
+        <div class="text-center">
+          <div class="text-6xl font-extrabold font-['Poppins'] pt-6 pb-2">
+            <span id="hero-text" class="relative inline-block after:content-['！'] after:absolute after:right-[-0.7em] after:top-0">
+              実践的
+            </span>
+          </div>
+          <div class="text-5xl font-bold font-['Poppins'] text-gray-800 pt-2"> <!-- テキスト色調整 -->
+            トラベル英会話<br>ウェビナー
+          </div>
+        </div>
+
+        <!-- 講師セクション -->
+        <section class="flex flex-col items-center mt-12">
+          <a href="https://www.instagram.com/kaito6123" target="_blank" class="group">
+            <div class="relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full opacity-0 group-hover:opacity-70 blur-md transition-all duration-300"></div>
+              <img src="/images/icon.png" class="relative z-10 w-48 h-48 object-cover rounded-full border-4 border-white shadow-lg">
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/kaito6123" target="_blank" class="mt-6 text-center group">
+            <span class="text-2xl font-bold font-['Poppins'] text-gray-800 group-hover:text-blue-600 transition-colors">
+              講師:バカイト【Bakaito】
+            </span>
+            <span class="block text-xl font-bold font-['Poppins'] text-gray-600 group-hover:text-blue-500 transition-colors">
+              @kaito6123
+            </span>
+          </a>
+
+          <div class="bg-gradient-to-r from-amber-500 to-amber-600 rounded-xl mt-6 p-4 max-w-md w-full shadow-md">
+            <div class="flex items-center justify-center gap-4">
+              <div class="bg-amber-200 rounded-xl p-3 flex flex-col gap-2">
+                <div class="w-10 h-2 bg-amber-600 rounded-full"></div>
+                <div class="w-8 h-2 bg-amber-600 rounded-full"></div>
+                <div class="w-6 h-2 bg-amber-600 rounded-full"></div>
+              </div>
+              <div class="text-center">
+                <span class="text-white text-xl font-bold">SNS総フォロワー</span>
+                <div class="text-white text-3xl font-bold leading-tight">
+                  <span class="text-4xl">60</span>万人以上！
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 共感セクション -->
+        <section class="mt-20 text-center">
+          <h2 class="text-3xl font-bold text-gray-800 mb-8">
+            海外旅行で<br>こんな時ありませんか？
+          </h2>
+
+          <ul class="space-y-4 mb-12">
+            <li class="text-xl font-semibold bg-white p-4 rounded-lg shadow-sm max-w-md mx-auto border-l-4 border-blue-500">
+              ✅「空港でうまく伝わらない…」
+            </li>
+            <li class="text-xl font-semibold bg-white p-4 rounded-lg shadow-sm max-w-md mx-auto border-l-4 border-blue-500">
+              ✅「ホテルでのやり取りが不安…」
+            </li>
+          </ul>
+
+          <h3 class="text-3xl font-bold text-gray-800 mb-12">
+            そんな海外旅行の<br>“よくある不安”を解決！
+          </h3>
+        </section>
+
+        <!-- CTAセクション -->
+        <section class="mb-20 text-center">
+          <p class="text-lg text-gray-700 leading-relaxed mb-8">
+            このウェビナーでは、YouTube・TikTokで人気のバカイト【Bakaito】が、<br>
+            英語が苦手な方でも今すぐ使える「旅行英会話フレーズ」や<br>
+            “困ったときに助かる英語の返し方”をやさしく・楽しく教えてくれます！
+          </p>
+
+          <!-- 価格表示バナー -->
+          <div class="relative bg-gradient-to-r from-yellow-50 to-amber-50 border-2 border-amber-200 rounded-xl py-5 px-4 mb-8 max-w-md mx-auto shadow-sm">
+            <div class="text-xl font-bold text-gray-800 mb-2">
+              <span class="line-through text-gray-500 mr-2">通常価格 1,000円</span>
+              → <span class="text-2xl text-red-600">今だけ無料抽選</span>
+            </div>
+            <p class="text-sm text-gray-600">
+              ※ 抽選で当たった方は完全無料で参加できます
+            </p>
+            <div class="absolute -top-3 -right-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">
+              期間限定
+            </div>
+          </div>
+
+          <!-- CTAボタン -->
+          <a href="/" class="inline-block bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-2xl font-bold py-4 px-12 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+            無料抽選申し込み
+          </a>
+
+          <p class="text-sm text-gray-500 mt-4">
+            ※ 当選者のみご連絡いたします
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- アニメーション用スタイル -->
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+</body>
+</html>
